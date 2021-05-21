@@ -1,0 +1,7 @@
+{
+  "name": "curso-spring-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}
