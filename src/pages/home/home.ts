@@ -28,6 +28,16 @@ export class HomePage {
     this.menu.swipeEnable(true);
   }
 
+  ionViewDidEnter(){
+    this.auth.refreshToken()
+    .subscribe(Response => {
+      this.auth.successfulLogin(Response.headers.get('Authorization'));
+      //this.navCtrl.push('CategoriasPage');setRoot
+      this.navCtrl.setRoot('CategoriasPage');
+    },
+    error => {})
+  }
+
   login(){
     this.auth.authenticate(this.creds)
     .subscribe(Response => {
