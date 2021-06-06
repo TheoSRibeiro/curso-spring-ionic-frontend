@@ -1,4 +1,4 @@
-import { RefDTO } from "../../models/ref.dto";
+import { RefDTO } from "./ref.dto";
 import { ItemPedidoDTO } from "./item-pedido.dto";
 import { PagamentoDTO } from "./pagamento.dto";
 
